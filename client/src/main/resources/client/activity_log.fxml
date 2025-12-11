@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.ActivityLogController"
+      spacing="10">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Activity Log" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <TableView fx:id="logTable" prefWidth="600.0">
+
+        <columns>
+            <TableColumn fx:id="timeCol" text="Time" prefWidth="150.0"/>
+            <TableColumn fx:id="actionCol" text="Action" prefWidth="150.0"/>
+            <TableColumn fx:id="detailsCol" text="Details" prefWidth="300.0"/>
+        </columns>
+
+    </TableView>
+
+</VBox>

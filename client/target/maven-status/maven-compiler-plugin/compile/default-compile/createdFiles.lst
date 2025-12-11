@@ -1,0 +1,17 @@
+client\RegisterController.class
+client\CreateTaskController.class
+client\dto\ActivityLog.class
+client\dto\GroupItem.class
+client\ClientApp.class
+client\dto\Group.class
+client\ApiClient.class
+client\dto\Task.class
+client\dto\User.class
+client\ActivityLogController.class
+client\dto\AuthResponse.class
+client\dto\LoginRequest.class
+client\ProfileController.class
+client\MainController.class
+org\example\Main.class
+client\LoginController.class
+client\MainController$1.class

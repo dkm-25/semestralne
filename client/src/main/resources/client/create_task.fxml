@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.CreateTaskController"
+      spacing="10"
+      alignment="TOP_LEFT">
+
+    <padding>
+        <Insets top="15" left="15" right="15" bottom="15"/>
+    </padding>
+
+    <!-- Заголовок -->
+    <Label fx:id="titleLabel"
+           text="Створення задачі"
+           style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <Label text="Назва:"/>
+    <TextField fx:id="titleField"/>
+
+    <Label text="Опис:"/>
+    <TextArea fx:id="descriptionField" prefRowCount="4"/>
+
+    <Label text="Дедлайн (yyyy-mm-dd):"/>
+    <TextField fx:id="deadlineField"/>
+
+    <Label fx:id="infoLabel" text="" style="-fx-text-fill: red;"/>
+
+    <Button fx:id="createButton"
+            text="create"
+            onAction="#onCreateClick"
+            prefWidth="150"/>
+
+</VBox>

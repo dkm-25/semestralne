@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.RegisterController"
+      alignment="TOP_CENTER"
+      spacing="10">
+
+    <padding>
+        <Insets top="15" left="15" right="15" bottom="15"/>
+    </padding>
+
+    <Label fx:id="infoLabel" text="" style="-fx-text-fill: red;"/>
+
+    <Label text="Registration" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <Label text="Name:"/>
+    <TextField fx:id="nameField"/>
+
+    <Label text="Email:"/>
+    <TextField fx:id="emailField"/>
+
+    <Label text="Password:"/>
+    <PasswordField fx:id="passwordField"/>
+
+    <Label text="Confirm password:"/>
+    <PasswordField fx:id="confirmField"/>
+
+    <Button text="Register" onAction="#onRegisterClick" prefWidth="120"/>
+
+</VBox>
